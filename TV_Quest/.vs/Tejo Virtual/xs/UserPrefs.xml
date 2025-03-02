@@ -1,0 +1,22 @@
+﻿<Properties StartupConfiguration="{5E5E4BD3-7D70-320D-D9FD-5328DFC06571}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Game/Scripts/ServerManagers/Communicator.cs">
+    <Files>
+      <File FileName="Assets/Game/Scripts/ADS/ADmob.cs" Line="43" Column="60" />
+      <File FileName="Assets/Game/Scripts/GlobalVars.cs" />
+      <File FileName="Assets/GoogleMobileAds/Editor/ManifestProcessor.cs" />
+      <File FileName="Assets/Game/Scripts/Scenes/Game_UIManager.cs" Line="703" Column="15" />
+      <File FileName="Assets/Game/Scripts/AS.cs" Line="104" Column="1" />
+      <File FileName="Assets/Game/Scripts/ADS/SponsorManager.cs" Line="35" Column="1" />
+      <File FileName="Assets/Game/Scripts/ServerManagers/Communicator.cs" Line="362" Column="43" />
+      <File FileName="Assets/Game/Scripts/CreditosManager.cs" Line="47" Column="1" />
+      <File FileName="Assets/Game/Scripts/Utils/LoadImage.cs" Line="142" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="b65eea84-0a0e-4f8f-a776-7b7288f0c8ff" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

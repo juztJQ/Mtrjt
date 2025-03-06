@@ -3101,7 +3101,7 @@ GameObject:
   - component: {fileID: 178388414}
   - component: {fileID: 178388413}
   m_Layer: 0
-  m_Name: '[BuildingBlock] Cube'
+  m_Name: TejoXR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3241,6 +3241,7 @@ Transform:
   m_Children:
   - {fileID: 8395689711694705260}
   - {fileID: 483495257}
+  - {fileID: 1282953452}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &180861060
@@ -3599,7 +3600,7 @@ MonoBehaviour:
   requestScenePermissionOnStartup: 1
   requestRecordAudioPermissionOnStartup: 0
   _localDimming: 1
-  _trackingOriginType: 1
+  _trackingOriginType: 0
   usePositionTracking: 1
   useRotationTracking: 1
   useIPDInPositionTracking: 1
@@ -3607,7 +3608,7 @@ MonoBehaviour:
   AllowRecenter: 1
   LateControllerUpdate: 1
   LateLatching: 0
-  controllerDrivenHandPosesType: 0
+  controllerDrivenHandPosesType: 2
   SimultaneousHandsAndControllersEnabled: 0
   _readOnlyWideMotionModeHandPosesEnabled: 0
   wideMotionModeHandPosesEnabled: 0
@@ -9013,7 +9014,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HandType: 1
   _pointerPoseRoot: {fileID: 0}
-  m_showState: 3
+  m_showState: 0
   RayHelper: {fileID: 0}
 --- !u!114 &462280367
 MonoBehaviour:
@@ -9323,9 +9324,9 @@ MonoBehaviour:
   _data: {fileID: 0}
   _pointableElement: {fileID: 483495260}
   _rigidbody: {fileID: 178388413}
-  _grabSource: {fileID: 0}
+  _grabSource: {fileID: 8395689711694705260}
   _useClosestPointAsGrabSource: 0
-  _releaseDistance: 0
+  _releaseDistance: 3
   _resetGrabOnGrabsUpdated: 1
   _physicsGrabbable: {fileID: 0}
 --- !u!114 &483495259
@@ -20842,8 +20843,8 @@ MonoBehaviour:
   m_modelMetaTouchProRightController: {fileID: 2025383560}
   m_modelMetaTouchPlusLeftController: {fileID: 1434448888}
   m_modelMetaTouchPlusRightController: {fileID: 718420790}
-  m_controller: 1
-  m_showState: 1
+  m_controller: -1
+  m_showState: 0
   showWhenHandsArePoweredByNaturalControllerPoses: 0
   RayHelper: {fileID: 0}
 --- !u!4 &958539200
@@ -27802,6 +27803,126 @@ Transform:
   m_Children: []
   m_Father: {fileID: 741996851}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1282953451
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1282953452}
+  - component: {fileID: 1282953455}
+  - component: {fileID: 1282953454}
+  - component: {fileID: 1282953453}
+  m_Layer: 0
+  m_Name: ISDK_HandGrabInteraction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1282953452
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282953451}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 178388418}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1282953453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282953451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a1bc992571301d4a9602ac95ef4c71a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactorFilters: []
+  _maxInteractors: -1
+  _maxSelectingInteractors: -1
+  _data: {fileID: 0}
+  _pointableElement: {fileID: 1282953455}
+  _rigidbody: {fileID: 685389655116428271}
+  _grabSource: {fileID: 0}
+  _useClosestPointAsGrabSource: 0
+  _releaseDistance: 0
+  _resetGrabOnGrabsUpdated: 1
+  _physicsGrabbable: {fileID: 0}
+--- !u!114 &1282953454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282953451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9a7676b01585ce43908639a27765dfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactorFilters: []
+  _maxInteractors: -1
+  _maxSelectingInteractors: -1
+  _data: {fileID: 0}
+  _pointableElement: {fileID: 1282953455}
+  _rigidbody: {fileID: 685389655116428271}
+  _physicsGrabbable: {fileID: 0}
+  _resetGrabOnGrabsUpdated: 1
+  _scoringModifier:
+    _positionRotationWeight: 0.5
+  _slippiness: 0
+  _supportedGrabTypes: 3
+  _pinchGrabRules:
+    _thumbRequirement: 0
+    _indexRequirement: 1
+    _middleRequirement: 1
+    _ringRequirement: 0
+    _pinkyRequirement: 0
+    _unselectMode: 1
+  _palmGrabRules:
+    _thumbRequirement: 1
+    _indexRequirement: 0
+    _middleRequirement: 2
+    _ringRequirement: 2
+    _pinkyRequirement: 1
+    _unselectMode: 0
+  _movementProvider: {fileID: 0}
+  _handAligment: 0
+  _handGrabPoses: []
+--- !u!114 &1282953455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282953451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _transferOnSecondSelection: 1
+  _addNewPointsToFront: 0
+  _forwardElement: {fileID: 0}
+  _oneGrabTransformer: {fileID: 0}
+  _twoGrabTransformer: {fileID: 0}
+  _targetTransform: {fileID: 178388418}
+  _maxGrabPoints: -1
+  _rigidbody: {fileID: 178388413}
+  _kinematicWhileSelected: 1
+  _throwWhenUnselected: 1
 --- !u!1 &1289613652
 GameObject:
   m_ObjectHideFlags: 0
@@ -43316,7 +43437,7 @@ MonoBehaviour:
   m_modelMetaTouchPlusRightController: {fileID: 1343254419}
   m_controller: 2
   m_showState: 1
-  showWhenHandsArePoweredByNaturalControllerPoses: 0
+  showWhenHandsArePoweredByNaturalControllerPoses: 1
   RayHelper: {fileID: 0}
 --- !u!4 &2046846482
 Transform:
@@ -46844,5 +46965,5 @@ SceneRoots:
   - {fileID: 598941263}
   - {fileID: 858019326}
   - {fileID: 185315386}
-  - {fileID: 351597674}
   - {fileID: 178388418}
+  - {fileID: 351597674}
